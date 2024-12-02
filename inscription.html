@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8" />
+      <title>Inscription - Conférence sur l'intelligence émotionnelle</title>
+
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap-grid.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/x-icon" href="./images/CIE-fav.png">
+    </head>
+
+    <body>
+
+        <!--Début du menu-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+              <img id="logo" src="images/logo-CIE.jpg" alt="logo CIE" title="CIE" width="47" height="49"/>
+            </div>
+            <div class="col-sm-10">
+              
+              <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a class="active" href="./">Inscription</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="nousJoindre.html">Nous joindre</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+              </ul> 
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+           <!--Titre et sous-titre-->
+          <div class="row">
+            <div class="container" id="imageConference">
+               <!--Titre et sous-titre-->
+              <div class="container" id="entete">
+                <h1>Le coeur au service de la tête</h1>
+                <h2>Conférence sur l'intelligence émotionnelle au travail</h2>
+                <a href="inscription.html"><button type="button">INSCRIPTION</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Text Inscription-->
+        <div class="container" style="padding-bottom:20px;">
+          <div class="row contenu">
+
+            <div style="text-align: center;" class="col-sm-12">
+              <h3>Formulaire d'inscription</h3>
+              <p>3 intervenants professionnels, 3 ateliers interactifs, événement réseautage</p>
+              <p style="margin-bottom:0px;"><b>Places limitées</b>
+                <br><b>Inscription obligatoire</b></p>
+            </div>
+          </div>
+
+        </div>
+ 
+        <div class="container" >
+          <div class="row justify-content-left">
+            <form action="/action_page.php">
+              <fieldset>
+              <legend class="titresection ">Informations personnelles</legend>
+              
+              <br><div class="row ">
+                <div class="row">
+                  <div class="col">
+                    <label class="label-inscription" for="prenom">Prénom:</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input class="text-input-inscription" type="text" id="prenom" name="prenom" value=""><br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row">
+                  <div class="col">
+                    <label class="label-inscription" for="nomF">Nom de famille:</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input class="text-input-inscription" type="text" id="nomF" name="nomF" value="">
+                  </div>
+                </div>
+                
+                
+              </div>
+              
+
+              <br><div class="row">
+                <div class="row">
+                  <label class="label-inscription" for="civilite">Civilité:</label><br>
+                </div>
+                <div class="row">
+                  <input class="radio-inscription" type="radio" id="madame" name="civilite" value="Madame">
+                  <label class="label-inscription" for="madame">Madame</label><br>
+                </div>
+                <div class="row">
+                  <input class="radio-inscription" type="radio" id="monsieur" name="civilite" value="Monsieur">
+                  <label class="label-inscription" for="monsieur">Monsieur</label><br>
+                </div>
+                <div class="row">
+                  <input class="radio-inscription" type="radio" id="nonB" name="civilite" value="X">
+                  <label class="label-inscription" for="nonB">X</label><br><br>
+                </div>
+              </div>
+              
+              <div><br>
+                <label class="label-inscription" for="numtelephone">Numéro de téléphone</label><br>    
+                <input class="text-input-inscription" type="text" id="numtelephone" name="numtelephone" placeholder="000-000-0000">
+              </div>
+              
+
+              
+              <div><br>
+                  <label class="label-inscription" for="adresse">Adresse Postale</label><br>
+                  <input class="text-input-inscription" type="text" id="adresse" name="adresse" placeholder="Adresse civique et rue">
+              </div>
+
+              <div>
+                  <input class="text-input-inscription" type="text" id="ville" name="ville" placeholder="Ville">
+              </div>
+
+              <div class="row">
+                <div class="col-12 d-flex" style="text-align: left;">
+                  <select class="text-input-inscription" style="height:51px; width:240px; margin-right:10px;" name="province" id="province">
+                    <option value="" disabled selected>Province</option>
+                    <option value="Québec">Québec</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="NouvelleEcosse">Nouvelle Ecosse</option>
+                    <option value="NouveauBrunswick">Nouveau Brunswick</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="ColombieBritannique">Colombie Britannique</option>
+                    <option value="PEI">Ile du Prince Edouard</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="TerreNeuve">Terre Neuve et Labrador</option>
+                  </select>
+                  <input class="text-input-inscription" style="width:240px" type="text" id="poste" name="poste" placeholder="Code postal">
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <label class="label-inscription" for="Courriel">Courriel</label><br>
+                  <input class="text-input-inscription" type="text" id="courriel" name="courriel" placeholder="courriel@adresse.com" >
+                </div>
+                <br><br>
+              </div>
+
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend class="titresection ">Informations professionnelles</legend>
+              <!--Info Professionnelles-->
+
+
+              <br><div class="col-12"> 
+                  <label class="label-inscription" for="entreprise">Nom de l'organisation ou entreprise</label><br>
+                  <input class="text-input-inscription" type="text" id="entreprise" name="entreprise" value="">
+              </div>
+
+              <div class="col-12"> 
+                <br><label class="label-inscription" for="poste">Titre du poste</label><br>
+                <input class="text-input-inscription" type="text" id="poste" name="poste" value="">
+              </div>
+
+              <div class="col-12"> 
+                <br><label class="label-inscription" for="secteur">Secteur d'activité</label><br>
+                <input class="text-input-inscription" type="text" id="secteur" name="secteur" value="">
+              </div>
+
+            </fieldset>
+            <br>
+            <!-- Billets-->
+            <fieldset>
+              <legend class="titresection ">Billet</legend>
+
+
+              <div class="row">
+                <div class="col-12 d-flex" style="text-align: left;">
+ 
+                  
+                  <select name="billet" id="billet" class="text-input-inscription" style="width:240px; margin-right:40px;">
+                    <option value="" disabled selected>Type de billet</option>
+                    <option value="enligne">En Ligne - 15$</option>
+                    <option value="presentiel">presentiel - 45$</option>
+                    <option value="vip">VIP - 100$</option>
+                  </select>
+
+                  <select name="paiement" id="paiement" class="text-input-inscription" style="width:240px;">
+                    <option value="" disabled selected>Mode de paiement</option>
+                    <option value="MasterCard">Mastercard</option>
+                    <option value="VISA">VISA</option>
+                    <option value="Interac">Interax</option>
+                  </select>
+                </div>
+              </div>
+
+
+
+              <table style="margin-top: 20px;">
+                <tr>
+                  <td width="20%"><p class="horaire">En Ligne</i></p></td>
+                  <td> <i class="fa-solid fa-arrow-right"></i></td>
+                  <td rowspan="2" width="80%" style="vertical-align: top; padding: 19px 0px 0px 20px; font-size: 13px;"><b>15$</b></td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                  <td><p class="horaire">Presentiel</i></p></td>
+                  <td class=""> <i class="fa-solid fa-arrow-right"></i></td>
+                  <td rowspan="2" style="vertical-align: top;text-align: left; padding: 19px 0px 0px 20px; font-size: 13px;"><b>45$</b></td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                  <td><p class="horaire">VIP</p></td>
+                  <td> <i class="fa-solid fa-arrow-right"></i></td>
+                  <td rowspan="2" style="vertical-align: top; padding: 19px 0px 0px 20px; font-size: 13px;"><b>100$</b></td>
+                </tr>
+              </table>
+              <p>
+
+              </p>
+              <div class="col-12 d-flex" >
+
+                <p>
+                  <div class="col-1 " style="height:39px; line-height:39px;">
+                  <b>Code Promo</b>
+                </div>
+                
+                <div class="col-2 rectangle-codepromo" >
+                  <b>STATION</b>
+                </div>
+                </p>
+                
+              </div>
+
+              <div class="col-12" >
+                <p>
+                <input class="radio-inscription justify-content-left" type="radio" id="conditions" name="conditions" value="Accepter" required>
+                <label class="label-inscription" for="conditions">J'accepte les termes et conditions de ce site web</label>
+                </p>
+              </div>
+            </fieldset>
+            <br>
+              <div class="col-12 d-flex">
+
+                <div class="col-3 d-flex ">
+                  <input class="button-soumettre" type="submit" value="SOUMETTRE">
+                </div>
+                <div class="col-9 d-flex " >
+                  <input class="button-reset "type="reset" value="REINITIALISER">
+                </div>
+                <br>
+              </div>
+            </form> 
+          </div>
+        </div>
+        <br>
+         <!--pied de page-->
+         <div class="row">
+          </br><div class="container" id="footer">
+          <p>&copy; 2024 CEI</p>
+          </div>
+        </div>
+</body>
+</html>
